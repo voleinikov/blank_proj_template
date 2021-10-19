@@ -14,6 +14,7 @@ This is a blank template to start new applications that use postgres, rails in A
 ##### Configure Rails API
 * `$> cd api`
 * `bundle install`
+* `rails g rspec:install`
 * Add DB password and username to rails credentials
   - `$> rails credentials:edit`
   - File format:
