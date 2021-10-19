@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: proj_api_production
-  username: proj_api
-  password: <%= ENV['PROJ_API_DATABASE_PASSWORD'] %>
+  username: <%= Rails.application.credentials.database[:username] %>
+  password: <%= Rails.application.credentials.database[:password] %>
