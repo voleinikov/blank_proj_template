@@ -1,6 +1,6 @@
 import { createTheme } from '@material-ui/core';
 
-export const useTheme = createTheme({
+export const siteTheme = createTheme({
   palette: {
     primary: {
       light: '#757ce8',

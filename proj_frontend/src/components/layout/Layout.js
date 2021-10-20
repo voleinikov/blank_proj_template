@@ -1,11 +1,9 @@
 import {CssBaseline, ThemeProvider} from '@material-ui/core';
-import { useTheme } from './overallTheme.js';
+import { siteTheme } from './siteTheme.js';
 
 function Layout(props) {
-  const theme = useTheme();
-
   return <>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={siteTheme}>
       <CssBaseline />
       <main>
         {props.children}
