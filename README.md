@@ -27,6 +27,8 @@ This is a blank template to start new applications that use postgres, rails in A
 * `$> rails db:create`
 * `$> rails g rspec:install`
 * `$> rails s`
+* Test the ping endpoint via curl:
+  `$> curl -X POST http://localhost:3001/api/v1/ping`
 
 ##### Configure the React Frontend
 * `$> cd proj_frontend`
