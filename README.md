@@ -29,4 +29,5 @@ This is a blank template to start new applications that use postgres, rails in A
 
 ##### Configure the React Frontend
 * `$> cd proj_frontend`
+* `$> npm install @material-ui/core @material-ui/icons` 
 * `$> npm install`
