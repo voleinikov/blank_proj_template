@@ -1,7 +1,7 @@
 ## Blank Rails API React SPA Project Template
 
 ### Intro
-This is a blank template to start new applications that use postgres, rails in API mode on the backend, and React.js on the frontend with minimal setup necessary after cloning the repo.  The repo is meant to be as bare-bones as possible -- so extras added by `rails new`, even in API mode (e.g. extra routes for mailers and such), and extras added by create-react-app, have been removed.  Please refer to the repo's git log to see the details of setup and what steps were taken to further clean up after initial setup.
+This is a blank template to start new applications that use postgres, rails in API mode on the backend, and React.js on the frontend with react-router-dom and material UI.  There should be minimal setup necessary to get up and going after cloning the repo.  The repo is meant to be as bare-bones as possible -- so extras added by `rails new`, even in API mode (e.g. extra routes for mailers and such), and extras added by create-react-app, have been removed.  Please refer to the repo's git log to see the details of setup and what steps were taken to further clean up after initial setup.
 
 ### Usage
 * `$> git clone https://www.github.com/voleinikov/blank_proj_template [your_proj_name]`
@@ -26,8 +26,10 @@ This is a blank template to start new applications that use postgres, rails in A
   ```
 * `$> createuser --interactive` (Then follow the prompts)
 * `$> rails db:create`
+* `$> rails s`
 
 ##### Configure the React Frontend
 * `$> cd proj_frontend`
-* `$> npm install @material-ui/core @material-ui/icons` 
+* `$> npm install @material-ui/core @material-ui/icons react-router-dom` 
 * `$> npm install`
+* `$> npm start`
