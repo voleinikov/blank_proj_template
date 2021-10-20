@@ -1,6 +1,6 @@
 module Api
   module V1
-    class BaseController < ApplicationController
+    class BasicController < ApplicationController
       def ping
         render json: { msg: ["I'm working!"] }, status: :ok
       end
