@@ -9,12 +9,11 @@ This is a blank template to start new applications that use postgres, rails in A
   - (In your project) `rm -rf .git`
   - `$> cd api; git init`
   - `$> cd frontend; git init`
-* You may also wish to rename the api and frontend directories less generically (especially if you are going to have them in individual repos).
+* You may also wish to rename the api and frontend directories less generically (especially if you are going to have them in individual repos).  The simplest way to do this is to replace "proj" prefix with your app's name - but if you do customize the name, please remember to make name changes in `database.yml` before creating the DB with rails below!
 
 ##### Configure Rails API
 * `$> cd proj_api`
 * `$> bundle install`
-* `$> rails g rspec:install`
 * Change database name to your projects name in `config/database.yml`
 * Add DB password and username to rails credentials
   - `$> rails credentials:edit`
@@ -26,6 +25,7 @@ This is a blank template to start new applications that use postgres, rails in A
   ```
 * `$> createuser --interactive` (Then follow the prompts)
 * `$> rails db:create`
+* `$> rails g rspec:install`
 * `$> rails s`
 
 ##### Configure the React Frontend
